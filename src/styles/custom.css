@@ -1,0 +1,157 @@
+/* Estilos personalizados para mejor visibilidad de componentes */
+
+/* Inputs con bordes más visibles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea {
+  border: 2px solid rgb(209 213 219) !important;
+  background-color: white !important;
+  transition: all 0.2s !important;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="search"]:hover,
+textarea:hover {
+  border-color: rgb(156 163 175) !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border-color: rgb(59 130 246) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+  outline: none !important;
+}
+
+/* Dark mode para inputs */
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="password"],
+.dark input[type="number"],
+.dark input[type="tel"],
+.dark input[type="url"],
+.dark input[type="search"],
+.dark textarea {
+  border-color: rgb(75 85 99) !important;
+  background-color: rgb(17 24 39) !important;
+  color: rgb(229 231 235) !important;
+}
+
+.dark input[type="text"]:hover,
+.dark input[type="email"]:hover,
+.dark input[type="password"]:hover,
+.dark input[type="number"]:hover,
+.dark input[type="tel"]:hover,
+.dark input[type="url"]:hover,
+.dark input[type="search"]:hover,
+.dark textarea:hover {
+  border-color: rgb(107 114 128) !important;
+}
+
+/* Select con bordes más visibles */
+[data-slot="select-trigger"] {
+  border: 2px solid rgb(209 213 219) !important;
+  background-color: white !important;
+}
+
+[data-slot="select-trigger"]:hover {
+  border-color: rgb(156 163 175) !important;
+}
+
+[data-slot="select-trigger"]:focus {
+  border-color: rgb(59 130 246) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Dark mode para select */
+.dark [data-slot="select-trigger"] {
+  border-color: rgb(75 85 99) !important;
+  background-color: rgb(17 24 39) !important;
+}
+
+.dark [data-slot="select-trigger"]:hover {
+  border-color: rgb(107 114 128) !important;
+}
+
+/* Tablas con bordes más definidos */
+table {
+  border-collapse: collapse !important;
+}
+
+thead {
+  background-color: rgb(249 250 251) !important;
+}
+
+thead th {
+  border-bottom: 2px solid rgb(209 213 219) !important;
+  font-weight: 600 !important;
+  color: rgb(55 65 81) !important;
+  padding: 12px 16px !important;
+  text-align: left !important;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgb(229 231 235) !important;
+}
+
+tbody tr:hover {
+  background-color: rgb(249 250 251) !important;
+}
+
+tbody td {
+  padding: 12px 16px !important;
+}
+
+/* Dark mode para tablas */
+.dark thead {
+  background-color: rgb(31 41 55) !important;
+}
+
+.dark thead th {
+  border-bottom-color: rgb(75 85 99) !important;
+  color: rgb(209 213 219) !important;
+}
+
+.dark tbody tr {
+  border-bottom-color: rgb(55 65 81) !important;
+}
+
+.dark tbody tr:hover {
+  background-color: rgba(31, 41, 55, 0.5) !important;
+}
+
+/* Labels más visibles */
+label {
+  color: rgb(55 65 81) !important;
+  font-weight: 500 !important;
+}
+
+.dark label {
+  color: rgb(209 213 219) !important;
+}
+
+/* Cards con bordes más visibles */
+[data-slot="card"],
+.card {
+  border: 1px solid rgb(229 231 235) !important;
+}
+
+.dark [data-slot="card"],
+.dark .card {
+  border-color: rgb(55 65 81) !important;
+}

@@ -1,0 +1,65 @@
+/* Scroll fix styles */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  height: auto;
+}
+
+/* Ensure main containers don't block scroll */
+#__next,
+main {
+  min-height: 100vh;
+  height: auto;
+}
+
+/* Remove any fixed heights that might block scrolling */
+.min-h-screen {
+  min-height: 100vh !important;
+  height: auto !important;
+}
+
+/* Ensure forms and modals don't overflow */
+.max-h-screen {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
